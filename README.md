@@ -1,12 +1,51 @@
-# Olympic_2021-Data-Analysis
+# 🏅 Olympic Sales Data Analysis – End-to-End ETL with Microsoft Azure
 
-In this project i have developed the ETL pipeline regarding the olympics data using the microsoft enviornment like 
-Azure Databricks for the transformation , Azure Data Factory for making th epipeline structure so that our raw data goes to
-different files in Azure Data Lake gen2 and tranformed data goes to other side of it .
+📌 Project Summary
+
+In this project, I developed an end-to-end ETL pipeline to process and analyze Olympic sales data using the Microsoft Azure ecosystem. The project demonstrates cloud-based data engineering using tools such as:
+
+* Azure Databricks for scalable data transformation with PySpark
+
+* Azure Data Factory (ADF) for orchestrating ETL pipelines
+
+* Azure Data Lake Storage Gen2 (ADLS) for storing raw and processed data
+
+* Azure Synapse Analytics for querying and analyzing the final transformed data
+
+This project showcases the implementation of a complete data pipeline—starting from raw data ingestion to meaningful insights—using Apache Spark with Python.
+
+🧱 Pipeline Flow
+
+1. Extraction & Ingestion
+
+* Raw data is uploaded to Azure Data Lake Storage Gen2.
+
+* Azure Data Factory pipelines are created to automate the flow of data from raw ("bronze") layers to processed ("silver" and "gold") layers.
+
+2. Transformation
+
+* Data is processed and transformed using PySpark in Azure Databricks.
+
+* Key transformations include data cleaning, deriving new columns, aggregating sales by region/sport, and filtering based on conditions.
+
+3. Loading & Analysis
+
+* Transformed data is stored back into ADLS Gen2.
+
+* Azure Synapse Analytics is used to query the transformed datasets using SQL scripts to extract valuable insights.
 
 
-Also I have used the Synapse Analytics by writing the Sql script to get the important result from the transformated data.
-As this project is data engineering project so this whole project done with the help of the apache spark with the Python 
+⚠️ Note: This project was built using a Microsoft Azure free trial. As the trial period has ended, the Azure resources (Databricks workspace, Data Factory pipelines, Synapse instance, and ADLS) are no longer active.
+
+However, the entire pipeline was successfully implemented and tested. Below are screenshots from the actual project execution:
+
+* Azure Data Factory pipeline overview
+
+* Databricks notebook showing transformations using PySpark
+
+* ADLS directory structure (raw & processed data)
+
+* Synapse SQL script execution with results
 
 
 
