@@ -50,7 +50,11 @@ However, the entire pipeline was successfully implemented and tested. Below are 
 
 * Synapse SQL script execution with results
 
-**These photos of corresponding project are in the folder called Photos 
+
+
+
+
+** The photos of corresponding project are in the folder called Photos 
 
 
 
