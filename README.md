@@ -1,4 +1,4 @@
-# 🏅 Olympic Sales Data Analysis – End-to-End ETL with Microsoft Azure
+# 🏅 Olympic Sales Data Engineering Project – End-to-End ETL with Microsoft Azure
 
 📌 Project Summary
 
