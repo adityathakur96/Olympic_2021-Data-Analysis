@@ -64,17 +64,17 @@ These files were uploaded to Azure Data Lake Storage Gen2 and served as the raw 
 
 However, the entire pipeline was successfully implemented and tested. Below are screenshots from the actual project execution: **
 
-* Azure Data Factory pipeline overview
+* Azure Data Factory pipeline overview.
 
-* Databricks notebook showing transformations using PySpark
+* Databricks notebook showing transformations using PySpark.
 
-* ADLS directory structure (raw & processed data)
+* ADLS directory structure (raw & processed data).
 
-* Synapse SQL script execution with results
+* Synapse SQL script execution with results.
 
 
 
-** The ScreenShots of corresponding project are in the folder called Photos 
+** The ScreenShots of corresponding project are in the folder called Images. 
 
 
 
