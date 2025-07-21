@@ -74,9 +74,7 @@ However, the entire pipeline was successfully implemented and tested. Below are 
 
 
 
-
-
-** The photos of corresponding project are in the folder called Photos 
+** The ScreenShots of corresponding project are in the folder called Photos 
 
 
 
