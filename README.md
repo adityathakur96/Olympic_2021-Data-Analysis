@@ -16,28 +16,31 @@ This project showcases the implementation of a complete data pipeline—starting
 
 🧱 Pipeline Flow
 
-1. Extraction & Ingestion
+# 1. Extraction & Ingestion
 
 * Raw data is uploaded to Azure Data Lake Storage Gen2.
 
 * Azure Data Factory pipelines are created to automate the flow of data from raw ("bronze") layers to processed ("silver" and "gold") layers.
 
-2. Transformation
+# 2. Transformation
 
 * Data is processed and transformed using PySpark in Azure Databricks.
 
 * Key transformations include data cleaning, deriving new columns, aggregating sales by region/sport, and filtering based on conditions.
 
-3. Loading & Analysis
+# 3. Loading & Analysis
 
 * Transformed data is stored back into ADLS Gen2.
 
 * Azure Synapse Analytics is used to query the transformed datasets using SQL scripts to extract valuable insights.
 
 
+
+
+
 ⚠️ Note: This project was built using a Microsoft Azure free trial. As the trial period has ended, the Azure resources (Databricks workspace, Data Factory pipelines, Synapse instance, and ADLS) are no longer active.
 
-However, the entire pipeline was successfully implemented and tested. Below are screenshots from the actual project execution:
+However, the entire pipeline was successfully implemented and tested. Below are screenshots from the actual project execution: **
 
 * Azure Data Factory pipeline overview
 
@@ -46,6 +49,8 @@ However, the entire pipeline was successfully implemented and tested. Below are 
 * ADLS directory structure (raw & processed data)
 
 * Synapse SQL script execution with results
+
+**These photos of corresponding project are in the folder called Photos 
 
 
 
