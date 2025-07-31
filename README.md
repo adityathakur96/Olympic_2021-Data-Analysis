@@ -1,80 +1,83 @@
-# 🏅 Olympic Sales Data Engineering Project – End-to-End ETL with Microsoft Azure
+# 🏅 **Olympic21 Data Engineering Project – End-to-End ETL with Microsoft Azure**
 
-📌 Project Summary
+---
 
-In this project, I developed an end-to-end ETL pipeline to process and analyze Olympic sales data using the Microsoft Azure ecosystem. The project demonstrates cloud-based data engineering using tools such as:
+## 📌 **Project Summary**
 
-* Azure Databricks for scalable data transformation with PySpark
+Welcome to the **Olympic21 Data Engineering Project**, an end-to-end data engineering solution based on the **Tokyo Olympic 2021 dataset**. This project demonstrates the design and implementation of a cloud-native ETL pipeline using the Microsoft Azure ecosystem, including:
 
-* Azure Data Factory (ADF) for orchestrating ETL pipelines
+- **Azure Databricks:** Scalable data transformation with PySpark  
+- **Azure Data Factory (ADF):** Powerful ETL pipeline orchestration  
+- **Azure Data Lake Storage Gen2 (ADLS):** Secure and scalable storage for raw & processed data  
+- **Azure Synapse Analytics:** Advanced querying and analytics on transformed data  
 
-* Azure Data Lake Storage Gen2 (ADLS) for storing raw and processed data
+This project highlights the journey from **raw data ingestion** to actionable insights, all powered by **Apache Spark with Python** on Azure.
 
-* Azure Synapse Analytics for querying and analyzing the final transformed data
+---
 
-This project showcases the implementation of a complete data pipeline—starting from raw data ingestion to meaningful insights—using Apache Spark with Python.
+## 📁 **Dataset Overview**
 
+The project analyzes a suite of **Olympic event datasets** simulating real-world sports records and participation analytics. These datasets, in CSV format, cover multiple perspectives:
 
-📁 Dataset Overview
+- **Athletes.csv:** Athlete details (name, discipline, gender, nationality)
+- **Coaches.csv:** Coaches' information by discipline
+- **EntriesGender.csv:** Gender-wise participation by country and sport
+- **Medals.csv:** Medals records (athletes, countries, events, Gold/Silver/Bronze)
+- **Teams.csv:** Team lists by country and discipline
 
-This project uses a collection of Olympic event datasets that simulate real-world sports and sales data for analysis. The dataset consists of multiple CSV files covering athletes, teams, coaches, entries by gender, and medals.
+All files are stored in **Azure Data Lake Storage Gen2** as raw input for the ETL pipeline. While fictional, the data structure closely mimics real Olympic datasets, making it ideal for learning and prototyping.
 
+---
 
-Each file provides a different perspective of the Olympic data:
+## 🧱 **Pipeline Flow**
 
-* Athletes.csv: Details of individual athletes, including their names, disciplines, genders, and nationalities.
+### 1️⃣ **Extraction & Ingestion**
+- Raw data files are uploaded to **ADLS Gen2** ("bronze" layer).
+- **Azure Data Factory** pipelines automate data flow from raw to processed layers ("silver" and "gold").
 
-* Coaches.csv: Information on coaches participating in different Olympic disciplines.
+### 2️⃣ **Transformation**
+- Data transformation is performed in **Azure Databricks** using **PySpark**.
+- **Key transformations:**
+    - Data cleaning and validation
+    - Deriving new columns for deeper insights
+    - Aggregating participation and medal tallies by region, country, or sport
+    - Filtering and joining datasets for analytics
 
-* EntriesGender.csv: Gender-wise participation statistics by country and discipline.
+### 3️⃣ **Loading & Analysis**
+- Transformed data is stored back in **ADLS Gen2**.
+- **Azure Synapse Analytics** is used to run advanced SQL queries and extract meaningful insights.
 
-* Medals.csv: Medal records for events, listing athletes, countries, event names, and medal types (Gold, Silver, Bronze).
+---
 
-* Teams.csv: Lists teams representing different countries across disciplines.
+## 📸 **Project Implementation Screenshots**
 
+Screenshots of the actual project execution (including pipeline overviews, code, and results) are provided in the **`Images` folder**:
 
-These files were uploaded to Azure Data Lake Storage Gen2 and served as the raw input for the ETL pipeline. Though fictional, the dataset closely mimics real-world Olympic reporting data and was ideal for testing cloud-based data engineering workflows.
+- **Azure Data Factory** pipeline overview
+- **Databricks notebook** showing transformations using PySpark
+- **ADLS** directory structure (raw & processed data)
+- **Synapse** SQL script execution with results
 
+---
 
-🧱 Pipeline Flow
+## ⚠️ **Note**
 
-# 1. Extraction & Ingestion
+This project was built using a **Microsoft Azure free trial**. As the trial period has ended, the Azure resources (**Databricks workspace, Data Factory pipelines, Synapse instance, and ADLS**) are **no longer active**.
 
-* Raw data is uploaded to Azure Data Lake Storage Gen2.
+However, **the entire pipeline was successfully implemented and tested**.  
+You can find screenshots from the actual project execution in the **`Images` folder**.
 
-* Azure Data Factory pipelines are created to automate the flow of data from raw ("bronze") layers to processed ("silver" and "gold") layers.
+---
 
-# 2. Transformation
+## 🤝 **Contributions & Feedback**
 
-* Data is processed and transformed using PySpark in Azure Databricks.
+Have suggestions or want to collaborate? **Open to feedback and improvements.**  
+Feel free to raise an issue or [connect with me on LinkedIn](https://www.linkedin.com/in/adityathakur9617/)!
 
-* Key transformations include data cleaning, deriving new columns, aggregating sales by region/sport, and filtering based on conditions.
+---
 
-# 3. Loading & Analysis
+## 📌 **Disclaimer**
 
-* Transformed data is stored back into ADLS Gen2.
+All data used in this project is **fictional** and intended solely for **educational and demonstration purposes**. Not for commercial deployment.
 
-* Azure Synapse Analytics is used to query the transformed datasets using SQL scripts to extract valuable insights.
-
-
-
-
-
-⚠️ Note: This project was built using a Microsoft Azure free trial. As the trial period has ended, the Azure resources (Databricks workspace, Data Factory pipelines, Synapse instance, and ADLS) are no longer active.
-
-However, the entire pipeline was successfully implemented and tested. Below are screenshots from the actual project execution: **
-
-* Azure Data Factory pipeline overview.
-
-* Databricks notebook showing transformations using PySpark.
-
-* ADLS directory structure (raw & processed data).
-
-* Synapse SQL script execution with results.
-
-
-
-** The ScreenShots of corresponding project are in the folder called Images. 
-
-
-
+---
